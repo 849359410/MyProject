@@ -1,0 +1,142 @@
+.redList {
+	text-align: center;
+	background-color: #ffffff;
+	padding-bottom: 50px;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	-webkit-overflow-scrolling: touch;
+	@at-root #{&}-head {
+		text-align: center;
+		height: 276px;
+		background: url('../../assets/img/game/details/hongbao_detail_head.png') no-repeat;
+		background-size: 100% 276px;
+		color: #f9e3b7;
+		@at-root #{&}_close {
+			text-align: left;
+			line-height: 55px;
+			font-size: 16px;
+			text-indent: 20px;
+		}
+		@at-root #{&}_img {
+			@at-root #{&}_accout {
+				width: 50px;
+				height: 50px;
+			}
+		}
+		@at-root #{&}_name {
+			font-size: 18px;
+			line-height: 1em;
+			margin-top: 20px;
+		}
+		@at-root #{&}_info {
+			font-size: 28px;
+			line-height: 1em;
+			margin-top: 50px;
+		}
+	}
+	@at-root #{&}-over {
+		font-size: 16px;
+		color: #000000;
+		font-weight: 600;
+		line-height: 50px;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+	@at-root #{&}-info {
+		text-align: left;
+		padding: 0 0 0 10px;
+		font-size: 16px;
+		line-height: 50px;
+		color: #000000;
+		@at-root #{&}_details {
+			border-bottom: 1px solid #eee;
+		}
+	}
+	@at-root #{&}-user {
+		text-align: left;
+		padding: 10px 20px 10px 10px;
+		height: 44px;
+		position: relative;
+		@at-root #{&}_left {
+			@at-root #{&}_img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		@at-root #{&}_right {
+			font-size: 16px;
+			color: #191919;
+			line-height: 20px;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				height: 0.9px;
+				left: 0;
+				background: #eee;
+				position: absolute;
+				right: -10px;
+				bottom: -5px;
+			}
+			.title {
+				font-size: 12px;
+				height: 14px;
+				padding: 1px 9px;
+				background-color: #E1604D;
+				border-radius: 6px;
+				color: #ffffff;
+				margin-left: 10px;
+			}
+			.right {
+				float: right;
+			}
+			p {
+				height: 25px;
+			}
+			@at-root #{&}_name {
+				float: left;
+				display: inline-block;
+				max-width: 50%;
+			}
+			@at-root #{&}_time {
+				font-size: 12px;
+				color: #b0b0b0;
+				line-height: 26px;
+				 span {
+					 width: 20px;
+					 height: 20px;
+					 display: inline-block;
+					 float: right;
+					 text-align: center;
+				 }
+				.lei {
+					background: url("../../assets/img/game/details/hongbao_boom.png") no-repeat;
+					background-size: cover;
+				}
+				.lucky {
+					width: 70px;
+					text-align: right;
+					color: #f7bf4f;
+					background: url("../../assets/img/game/details/hongbao_hat.png") no-repeat;
+					background-size: 18px 18px;
+					background-position: 0 4px;
+				}
+				.niu {
+					color: #ffffff;
+					background: url("../../assets/img/game/niuniu/icon_niu.png") no-repeat;
+					background-size: cover;
+					font-weight: 600;
+				}
+				.niu_niu {
+					background: url("../../assets/img/game/niuniu/icon_niuniu.png") no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+	}
+}

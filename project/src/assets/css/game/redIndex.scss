@@ -1,0 +1,401 @@
+.redMain {
+	overflow: hidden;
+}
+.red {
+	padding: 10px;
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 60px;
+	-webkit-overflow-scrolling: touch;
+	@at-root #{&}-list {
+		margin-bottom: 20px;
+		@at-root #{&}_left {
+			@at-root #{&}_img {
+				margin-top: 20px;
+				width: 42px;
+				height: 42px;
+				border-radius: 4px;
+			}
+		}
+		@at-root #{&}_center {
+			.isOpenRed {
+				.title {
+					background-color: #F9E0C2;
+				}
+				.niuniu {
+					background: url("../../assets/img/game/niuniu/bg_hb_niuniu_opened.jpg") no-repeat;
+					background-size: cover;
+				}
+				&:before {
+					border-right: 5px solid #F9E0C2;
+				}
+			}
+			@at-root #{&}_name {
+				line-height: 20px;
+				font-size: 12px;
+				color: #666666;
+			}
+			@at-root #{&}_right {
+				margin: 5px 0 0 0;
+				border-radius: 4px;
+				background-color: #ffffff;
+				position: relative;
+				font-size: 16px;
+				color: #333333;
+				.title {
+					border-top-left-radius: 4px;
+					border-top-right-radius: 4px;
+					padding: 10px 10px 20px 20px;
+					background-color: #FA9E3B;
+					color: #ffffff;
+					font-size: 14px;
+					.red_img {
+						width: 30px;
+					}
+					.state {
+						padding-left: 8px;
+					}
+					.money {
+						font-size: 16px;
+						line-height: 16px;
+						margin-bottom: 14px;
+					}
+				}
+				.tips {
+					text-indent: 10px;
+					line-height: 30px;
+					font-size: 14px;
+					color: #b3b3b3;
+				}
+				&:before {
+					position: absolute;
+					content: '';
+					display: block;
+					width: 0;
+					height: 0;
+					left: -4px;
+					top: 10px;
+					border-right: 5px solid #FA9E3B;
+					border-top: 8px solid transparent;
+					border-bottom: 8px solid transparent;
+				}
+			}
+		}
+	}
+	@at-root #{&}-my-list {
+		.red-list_center_name, .red-list_left {
+			text-align: right;
+		}
+		.isOpenRed {
+			.title {
+				background-color: #F9E0C2;
+			}
+			.niuniu {
+				background: url("../../assets/img/game/niuniu/bg_hb_niuniu_opened.jpg") no-repeat;
+				background-size: cover;
+			}
+			&:before {
+				border-left: 5px solid #F9E0C2 !important;
+			}
+		}
+		.red-list_center_right {
+			&:before {
+				right: -4px;
+				left: inherit;
+				border-left: 5px solid #FA9E3B;
+				border-right: 0;
+			}
+		}
+	}
+	@at-root #{&}-chat {
+		.red-list_center_right {
+			padding: 8px;
+			line-height: 24px;
+			p {
+				word-break: break-all;
+			}
+			&:before {
+				border-right: 5px solid #ffffff;
+			}
+		}
+		.red-list_center_chat {
+			float: left;
+			max-width: 221px;
+			display: inline-block;
+		}
+	}
+	@at-root #{&}-my-chat {
+		.red-list_center_name, .red-list_left {
+			text-align: right;
+		}
+		.red-list_center_right {
+			background-color: #A0EA71;
+			&:before {
+				right: -5px;
+				left: inherit;
+				border-left: 5px solid #A0EA71;
+				border-right: 0;
+			}
+		}
+		.red-list_center_chat {
+			float: right;
+		}
+	}
+	@at-root #{&}-time {
+		line-height: 40px;
+		text-align: center;
+		color: #999999;
+	}
+	@at-root #{&}-tips {
+		text-align: center;
+		line-height: 20px;
+		color: #333333;
+		width: 70%;
+		margin: 0 auto 4px;
+		background-color: #ececec;
+		p {
+			span {
+				color: #0036D9;
+			}
+			.money {
+				color: #c40000;
+			}
+		}
+	}
+	@at-root #{&}-niuniu {
+		padding: 0 20px;
+	}
+	@at-root #{&}-list {
+		.niuniu {
+			background: url("../../assets/img/game/niuniu/bg_hb_niuniu.jpg") no-repeat;
+			background-size: cover;
+		}
+		.tongsha {
+			background: url("../../assets/img/game/niuniu/result_tongsha.jpg") no-repeat;
+			background-size: 100% 100%;
+		}
+		.tongpei {
+			background: url("../../assets/img/game/niuniu/result_tongpei.jpg") no-repeat;
+			background-size: 100% 100%;
+		}
+		@at-root #{&}_top {
+			height: 28px;
+			padding-top: 127px;
+			background: url("../../assets/img/game/niuniu/result_normal.jpg") no-repeat;
+			background-size: 100% 100%;
+			border-top-left-radius: 16px;
+			border-top-right-radius: 16px;
+			text-align: center;
+			p {
+				font-size: 20px;
+				font-weight: 600;
+				span {
+					color: #c40000;
+				}
+			}
+		}
+		@at-root #{&}_bottom {
+			height: 54px;
+			padding: 5px;
+			background-color: #ffffff;
+			border-bottom-left-radius: 16px;
+			border-bottom-right-radius: 16px;
+			@at-root #{&}_left {
+				@at-root #{&}_img {
+					width: 54px;
+					height: 54px;
+				}
+			}
+			@at-root #{&}_center {
+				font-size: 16px;
+				color: #000000;
+				line-height: 24px;
+				p {
+					font-size: 16px;
+				}
+				@at-root #{&}_info {
+					height: 30px;
+					span {
+						display: inline-block;
+						color: #ffffff;
+						font-size: 14px;
+						float: left;
+						&:first-child {
+							background-color: #E1604D;
+							padding: 3px 10px;
+							border-radius: 28px;
+						}
+						&:last-child {
+							width: 30px;
+							height: 30px;
+							line-height: 36px;
+							text-align: center;
+							background: url("../../assets/img/game/niuniu/icon_niu.png") no-repeat;
+							background-size: 30px;
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+			@at-root #{&}_right {
+				line-height: 54px;
+				font-size: 16px;
+				text-align: right;
+				color: #888888;
+			}
+		}
+	}
+}
+.openRed {
+	margin: auto;
+	width: 280px;
+	height: 480px;
+	background: url("../../assets/img/game/details/hongbao_bg.png") no-repeat;
+	background-size: contain;
+	text-align: center;
+	color: #FBE3B7;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	position: absolute;
+	@at-root #{&}-head {
+		@at-root #{&}_img {
+			width: 40px;
+			height: 40px;
+			margin-top: 50px;
+		}
+	}
+	@at-root #{&}-name {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	@at-root #{&}-money {
+		font-size: 24px;
+		line-height: 1em;
+		margin-top: 50px;
+	}
+	@at-root #{&}-open {
+		@at-root #{&}_img {
+			width: 80px;
+			margin-top: 70px;
+			&.move_red {
+				animation:redMove 1s infinite;
+			}
+		}
+	}
+	@keyframes redMove {
+		0%{
+			transform: rotateY(0deg);
+		}
+		25%{
+			transform: rotateY(90deg);
+		}
+		50%{
+			transform: rotateY(180deg);
+		}
+		100%{
+			transform: rotateY(360deg);
+		}
+	}
+	@at-root #{&}-over {
+		font-size: 40px;
+		line-height: 1em;
+		margin-top: 40px;
+		span {
+			margin-left: 6px;
+			font-size: 16px;
+		}
+	}
+	@at-root #{&}-luck {
+		font-size: 12px;
+		line-height: 1em;
+		margin-top: 80px;
+	}
+	@at-root #{&}-close {
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		@at-root #{&}_img {
+			width: 55px;
+		}
+	}
+}
+.right {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	width: 50px;
+	@at-root #{&}-main {
+		text-align: center;
+		font-size: 14px;
+		line-height: 20px;
+		background-color: #f5f5f5;
+		border-radius: 10px;
+		@at-root #{&}_list {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			@at-root #{&}-time {
+				font-size: 12px;
+			}
+		}
+	}
+}
+.bottom {
+	position: absolute;
+	bottom: 0;
+	height: auto;
+	width: 100%;
+	padding: 13px 0;
+	left: 0;
+	background-color: #ffffff;
+	@at-root #{&}-left {
+		padding-left: 10px;
+		@at-root #{&}_input {
+			position: relative;
+			line-height: 20px;
+			padding: 7px 0;
+			border-bottom: 1px solid #ff0a3a;
+			&:before {
+				content: '';
+				display: block;
+				width: 1px;
+				height: 5px;
+				background: #FF0A3A;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+			&:after {
+				content: '';
+				display: block;
+				width: 0.9px;
+				height: 5px;
+				background: #FF0A3A;
+				position: absolute;
+				right: 0 !important;
+				bottom: 0;
+			}
+		}
+	}
+	@at-root #{&}-click {
+		&.no_red {
+			div {
+				background-color: #999999;
+			}
+		}
+		div {
+			width: 34px;
+			height: 34px;
+			margin: 0 auto;
+			background-color: #ff0a3a;
+			border-radius: 50%;
+		}
+		@at-root #{&}_img {
+			width: 20px;
+		}
+	}
+}

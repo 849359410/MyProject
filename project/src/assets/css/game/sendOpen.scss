@@ -1,0 +1,90 @@
+.headRedMain {
+	overflow: scroll;
+}
+.handRed {
+	padding: 10px;
+	background-color: #f5f5f5;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	-webkit-overflow-scrolling: touch;
+	@at-root #{&}-head {
+		line-height: 50px;
+		text-align: center;
+		margin-bottom: 15px;
+		@at-root #{&}_left {
+			font-size: 14px;
+			text-align: left;
+			text-indent: 6px;
+		}
+		@at-root #{&}_center {
+			font-size: 20px;
+			font-weight: 600;
+		}
+	}
+	@at-root #{&}-list {
+		line-height: 30px;
+		margin-bottom: 10px;
+		position: relative;
+		@at-root #{&}_input {
+			border-radius: 6px;
+		}
+		@at-root #{&}_but {
+			width: 20px;
+			min-width: 10px;
+			border: none;
+			padding: 0;
+		}
+		@at-root #{&}_stepper {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		@at-root #{&}_tips {
+			font-size: 12px;
+			color: #787878;
+			text-align: left;
+			padding-left: 16px;
+			margin-top: -5px;
+			span {
+				color: #c40000;
+			}
+		}
+	}
+	@at-root #{&}-money {
+		text-align: center;
+		margin: 30px auto;
+		p {
+			font-size: 30px;
+			span {
+				font-size: 44px;
+			}
+		}
+	}
+	@at-root #{&}-but {
+		width: 50%;
+		margin-left: 25%;
+		&.handRed-but_no {
+			.handRed-but_post {
+				background-color: #e3c3b9;
+			}
+		}
+		@at-root #{&}_post {
+			background-color: #ff0a3a;
+			border: none;
+			border-radius: 6px;
+		}
+	}
+	@at-root #{&}-picker {
+		@at-root #{&}_selete {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}

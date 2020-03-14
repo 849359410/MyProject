@@ -1,0 +1,17 @@
+.team {
+	padding: 10px;
+	background-color: #ffffff;
+	@at-root #{&}-list {
+		height: 50px;
+		line-height: 50px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #f0f0f0;
+		color: #333333;
+		@at-root #{&}_title {
+			font-size: 14px;
+		}
+		@at-root #{&}_right {
+			text-align: right;
+		}
+	}
+}
